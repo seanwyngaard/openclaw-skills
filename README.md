@@ -1,10 +1,8 @@
 # OpenClaw Income Skills
 
-11 production-ready skills for [OpenClaw](https://openclaw.ai) and [Claude Code](https://claude.ai/code) designed to help freelancers generate $1,000–$2,000+/month in income.
+11 production-ready skills for [OpenClaw](https://openclaw.ai) and [Claude Code](https://claude.ai/code) built on the [Agent Skills](https://agentskills.io) open standard.
 
-Built on the [Agent Skills](https://agentskills.io) open standard — compatible with OpenClaw, Claude Code, and any tool that supports the standard.
-
-## The Skills
+## Skills
 
 ### Tier 1 — Win Work, Deliver Work, Manage Clients
 
@@ -36,8 +34,6 @@ Built on the [Agent Skills](https://agentskills.io) open standard — compatible
 
 ### Claude Code
 
-Copy a skill folder into your personal skills directory:
-
 ```bash
 # Single skill
 cp -r skills/freelance-proposal-engine ~/.claude/skills/
@@ -46,15 +42,13 @@ cp -r skills/freelance-proposal-engine ~/.claude/skills/
 cp -r skills/* ~/.claude/skills/
 ```
 
-Or add this repo as a project dependency and use `--add-dir`:
+Or point Claude Code at this repo:
 
 ```bash
 claude --add-dir /path/to/openclaw-skills/skills
 ```
 
 ### OpenClaw (ClawHub)
-
-Skills are published individually on [ClawHub](https://clawhub.ai). Install via CLI:
 
 ```bash
 clawhub install freelance-proposal-engine
@@ -80,24 +74,6 @@ Each skill is invoked as a slash command:
 
 See each skill's `SKILL.md` for full documentation and examples.
 
-## How These Make Money
-
-The skills target three proven freelance income streams:
-
-1. **Win more work** — The proposal engine helps you apply to 5–10x more gigs with tailored, high-quality proposals
-2. **Deliver faster** — Content, scraping, landing pages, and email skills let you deliver client work in hours instead of days
-3. **Scale operations** — The project manager and contract generator remove admin overhead so you can handle more clients
-
-**Realistic income targets:**
-
-| Strategy | Monthly Income |
-|----------|---------------|
-| SEO content writing (3–5 articles/day at $50–200 each) | $1,500–6,000 |
-| Web scraping projects on Upwork ($200–2,000/project) | $500–2,000 |
-| Landing pages on Fiverr ($100–500/page) | $500–2,000 |
-| Email sequences ($200–1,000/sequence) | $300–1,000 |
-| Social media management retainers ($300–800/client) | $300–800 |
-
 ## Skill Format
 
 Each skill follows the Agent Skills standard:
@@ -118,13 +94,7 @@ PRs welcome. To add a skill:
 1. Create a new folder under `skills/` with your skill name
 2. Add a `SKILL.md` following the format above
 3. Test it locally with Claude Code or OpenClaw
-4. Open a PR with a description of what the skill does and how it generates value
-
-## Research
-
-See the research docs that informed this project:
-- [RESEARCH-EXISTING-SKILLS.md](RESEARCH-EXISTING-SKILLS.md) — Full landscape of existing OpenClaw/Claude Code skills
-- [SKILL-GAPS-AND-RECOMMENDATIONS.md](SKILL-GAPS-AND-RECOMMENDATIONS.md) — Gap analysis and income projections
+4. Open a PR with a description of what the skill does
 
 ## License
 
